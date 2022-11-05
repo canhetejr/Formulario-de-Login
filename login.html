@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header id="logo" >
+        <img src="images/logo.svg" alt="">
+    </header>
+
+    <section id="loginContainer">
+
+        <h2><img id="loginIco" src="images/log-in.svg" alt="">  Faça seu login</h2>
+        <h3 id="p1">Entre com suas informações de cadastro.</h3>
+
+                
+        <p>E-mail</p>
+        <img class="imgInput" id="mail" src="images/mail.svg" alt="">
+        <input class="inputDados" type="email" value="" name="email" placeholder="Digite seu e-mail" onclick="mailFocus()">
+                
+
+        <p>Sehha</p>
+        <img  id="eye" src="images/eye.svg" alt="">
+        <img class="imgInput" id="lock" src="images/lock.svg" alt="">
+        <input class="inputDados" type="password" value="" placeholder="Digite sua senha" name="senha" onclick="lockFocus() ">
+          
+        <p></p>
+
+            <label id="containerCheckbox">
+                <input type="checkbox" checked="checked ">
+                <span id="checkmark"></span>
+                <p id="lembrar">Lembre-me</p>
+            </label>
+
+            <a id="recuperarSenha" href="#">Esqueci minha senha</a>
+        <button id="botao">ENTRAR</button>
+        <p id="registro">Não tem uma conta? <a href="#"><span></span> Registre-se</a></p>
+
+ 
+
+    </section>
+
+       <section id="imgLateral">
+            <img id="carro" src="images/side-image.jpg" alt="">
+        </section>
+ 
+    <script>
+        function mailFocus() {
+            var img1 = document.querySelector("#mail")
+            img1.setAttribute('src', 'images/mail-focus.svg');
+
+            var img2 = document.querySelector("#lock")
+            img2.setAttribute('src', 'images/lock.svg');
+        }
+
+        function lockFocus() {
+        var img3 = document.querySelector("#lock")
+        img3.setAttribute('src', 'images/lock-focus.svg');
+
+        var img4 = document.querySelector("#mail")
+        img4.setAttribute('src', 'images/mail.svg');
+
+        }
+    </script>
+
+</body>
+</html>
