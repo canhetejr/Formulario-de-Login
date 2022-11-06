@@ -208,3 +208,25 @@ a{
 }
 
 
+@media (max-width: 650px){
+  body{
+  background-color: #24221f;
+}
+
+#loginContainer{
+  margin: auto;
+  width: 100%;
+}
+
+#imgLateral{
+  display: none;
+}
+
+h2{
+  margin: auto;
+}
+
+
+}
+
+
